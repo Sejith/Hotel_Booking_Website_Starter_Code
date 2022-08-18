@@ -7,11 +7,18 @@
     <body>
         <div>
             <div class="header">
-                <p class="marg"><img src="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" width="150px" height="200px"><a href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\login.html" target="_blank">Login</a></p>
+                <p class="marg"><a href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\index.html"><img src="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" width="150px" height="200px"></a><a href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\login.html" target="_blank">Login</a></p>
             </div>
             <div class="content container">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
-                <a href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\payment.html"><p class="marg">Book Now</p></a>
+                <form action="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\payment.html"class="list">
+                    <label>Adults: <input type="number" value=1 min=1 required></label>
+                    <label>Name: <input type="text" required></label>
+                    <label>From Date: <input type="date" required></label>
+                    <label>To Date: <input type="date" required></label>
+                    <label>Total: <input type="text" disabled required></label>
+                    <label><button>Book Now</button></label>
+                </form>
                 <h2>Radisson Blu Hotel</h2>
                 <p>RATING</p>
                 <p>5 star</p>

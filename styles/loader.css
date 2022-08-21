@@ -2,3 +2,14 @@
     margin-top: 0;
     margin-bottom: 0;
 }
+.in{
+    stroke: #444444;
+    fill: none;
+    stroke-width: 12px;
+}
+.out{
+    stroke: #f3f3f3 ;
+    fill: none;
+    stroke-width: 12px;
+    stroke-dasharray: 120;
+}

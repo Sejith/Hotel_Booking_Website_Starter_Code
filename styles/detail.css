@@ -10,3 +10,30 @@ html,body{
     width: 100%;
     height: 100%;
  }
+ body{
+    background-color: #e0e0e0;
+    margin: 0px;
+}
+.header{
+    background-color: rosybrown;
+
+}
+.footer{
+    background-color: rosybrown;
+}
+.img{
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-right: 4%;
+}
+form{
+    margin-left: 4%;
+    margin-bottom: 1%;
+    margin-right: 4%;
+}
+.des{
+    margin-left: 4%;
+    margin-bottom: 2%;
+    margin-right: 4%;
+    margin-top: 1%;
+}

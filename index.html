@@ -3,31 +3,33 @@
     <head>
         <title>index</title>
         <link rel="stylesheet" type="text/css" href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\styles\index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
-            <div class="header">
-                <p class="marg"><img src="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" width="60px" height="60px"><a href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\login.html">Login</a></p>
-            </div>
-            <div class="content">
-                <div class="bg"><label><input type="text" placeholder="City"></label></div>
+            <header class="header">
+                <img id="img10" src="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" width="60px" height="60px">
+                <a id="login" href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\login.html">Login</a>
+            </header>
+            <main class="content">
+                <div class="bg"><input id="search" type="search" placeholder="City"></div>
                 <div class="citycards">
-                    <a href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\list.html"><img id="img1" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height="150px" width="150px"></a>
-                    <img id="img2" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" height="150px" width="150px">
-                    <img id="img3" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" height="150px" width="150px">
-                    <img id="img4" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" height="150px" width="150px">
+                    <a href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\list.html"><img id="cityimg" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height="150px" width="150px"></a>
+                    <img id="cityimg" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" height="150px" width="150px">
+                    <img id="cityimg" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" height="150px" width="150px">
+                    <img id="cityimg" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" height="150px" width="150px">
                 </div>
-                <a href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\index.html">View more >></a>
-            </div>
-            <div class="footer">
-                <a href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\contact.html">Contact Us</a>
-                <p class="marg">
+                <div id="view"><a href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\index.html">View more >></a></div>
+            </main>
+            <footer class="footer">
+                <a id="contact" href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\contact.html">Contact Us</a>
+                <p id="copyw">&copy; 2020 ROOM SEARCH PVT LTD</p>
+                <div id="social">
                     <a href="https://facebook.com/" target="_blank"><img src="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\assests\images\facebook.png" height="20px" width="22px"></a>
                     <a href="https://instagram.com/" target="_blank"><img src="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\assests\images\instagram.png" height="20px" width="22px"></a>
                     <a href="https://twitter.com/" target="_blank"><img src="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\assests\images\twitter.png" height="20px" width="22px"></a>
-                </p>
-                <p class="marg">&copy; 2020 ROOM SEARCH PVT LTD</p>
-            </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>

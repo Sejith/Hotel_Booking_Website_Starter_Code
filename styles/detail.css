@@ -38,11 +38,15 @@ a{
     margin-left: 4%;
     margin-top: 2%;
     margin-right: 4%;
+    height: 400px;
 }
 form{
     margin-left: 4%;
     margin-bottom: 1%;
     margin-right: 4%;
+    height: 422px;
+    display: flex;
+    justify-content: center;
 }
 .des{
     margin-left: 4%;
@@ -52,9 +56,11 @@ form{
 }
 #contact{
     padding: 1%;
+    margin-left: 2%;
 }
 #social{
     padding: 1%;
+    margin-right: 2%;
 }
 #copyw{
     margin-bottom: 0;
@@ -65,4 +71,31 @@ html{
 }
 #login{
     padding: 1%;
+    padding-right: 2%;
+}
+.hotelform{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    padding: 2%;
+}
+.hotelform > div {
+    border: 1px solid black;
+    text-align: center;
+}
+input{
+    margin: 10%;
+    display: flex;
+    width: 80%;
+}
+
+button{
+    padding: 6%;
+}
+.heading{
+    font-family: cursive;
+}
+.content{
+    display: flex;
+    flex-direction: column;
 }

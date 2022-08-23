@@ -23,6 +23,7 @@ a{
 }
 #login{
     padding: 1%;
+    padding-right: 2%;
 }
 .content{
     margin-top: 60px;
@@ -42,6 +43,7 @@ a{
     font-size: 16px;
     border-radius: 12px;
     width: 350px;
+    outline: none;
 }
 .citycards{
     margin: 0 15%;
@@ -49,11 +51,44 @@ a{
     align-items: center;
     justify-content: space-between;
 }
-#cityimg{
+.city_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+}
+.img_cont{
+    position: relative;
     width: 150px;
     height: 150px;
     margin: 4% 0;
     border-radius: 25px;
+    box-shadow: 10px 10px 10px grey;
+
+}
+#delhi,#goa,#hyd,#kolk{
+    position: absolute;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#delhi:hover{
+    opacity: 1;
+}
+#goa:hover{
+    opacity: 1;
+}
+#hyd:hover{
+    opacity: 1;
+}
+#kolk:hover{
+    opacity: 1;
 }
 #view{
     text-align: center;
@@ -69,9 +104,11 @@ a{
 }
 #contact{
     padding: 1%;
+    margin-left: 2%;
 }
 #social{
     padding: 1%;
+    margin-right: 2%;
 }
 #copyw{
     margin-bottom: 0;
@@ -80,5 +117,9 @@ a{
 html{
     font-family: 'Ubuntu', 'san-serif';
 }
+#img10{
+    margin-left: 1%;
+}
+
 
 

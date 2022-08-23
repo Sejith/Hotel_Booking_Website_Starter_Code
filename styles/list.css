@@ -26,15 +26,23 @@
     width: 100%;
 }
 .img{
-    margin: 3%;
-    background-color: rgb(132,136,139);
+    margin: 4%;
+    background-color: lightgray;
     width: 40%;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    height: fit-content;
+}
+#imgdes{
+    margin-left: 2%;
 }
 #contact{
     padding: 1%;
+    margin-left: 2%;
 }
 #social{
     padding: 1%;
+    margin-right: 2%;
 }
 #copyw{
     margin-bottom: 0;
@@ -52,6 +60,7 @@ a{
 }
 #login{
     padding: 1%;
+    padding-right: 2%;
 }
 .lisma{
     list-style-type: none;

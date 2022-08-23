@@ -37,22 +37,35 @@
     margin-bottom: 2%;
     margin-left: 25%;
     margin-right: 25%;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    height: fit-content;
 }
+#imgdes{
+    margin-left: 2%;
+    padding: 10%;
+ }
 .des{
     margin: 2%;
+    margin-left: 10%;
 }
-.tariff{
+.bill{
     margin: 2%;
     height: 100%;
     border: 1px solid black;
     padding: 1% 2%;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rosybrown;
 }
 #contact{
     padding: 1%;
+    margin-left: 2%;
 }
 #social{
     padding: 1%;
+    margin-right: 2%;
 }
 #copyw{
     margin-bottom: 0;
@@ -67,7 +80,23 @@ a{
 }
 #login{
     padding: 1%;
+    padding-right: 2%;
 }
 #pay{
     padding-bottom: 6%;
+    margin-top: 70px;
+    margin-right: 10%;
+}
+.heading{
+    font-family: cursive;
+}
+.tariff{
+    margin-top: 50px;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }

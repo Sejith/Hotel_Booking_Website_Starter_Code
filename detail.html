@@ -1,70 +1,183 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>detail</title>
-        <link rel="stylesheet" type="text/css" href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\styles\detail.css">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                <a href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\index.html"><img id="img10" src="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" width="60px" height="60px"></a>
-                <a id="login" href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\login.html">Login</a>
-            </header>
-            <main class="content">
-               <div class="hotelform">
-                    <div><img class="img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" height="350px" width="500px"></div>    
-                        <div>
-                            <form action="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\payment.html"class="list">
-                                <table>
-                                    <tr height="7%">
-                                        <td>Adults:</td>
-                                        <td><input type="number" value=1 min=1 required></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Name:</td>
-                                        <td><input type="text" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td>From Date:</td>
-                                        <td><input type="date"  width="fit-content"  required></td>
-                                    </tr>
-                                    <tr>
-                                        <td>To Date:</td>
-                                        <td><input type="date"  width="100px"  required></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Total:</td>
-                                        <td><input type="text" disabled required></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td><button>Book Now</button></td>
-                                    </tr>
-                                </table>
-                            </form>
-                        </div>
-                    </div> 
-                <div class="des"><h2>Radisson Blu Hotel</h2>
-                <p class="heading"><b>RATING</b></p>
-                <p>5 star</p>
-                <p class="heading"><b>AMENITIES</b></p>
-                <ul><li>Room service</li><li>Restaurant</li><li>Business center</li><li>Fitness center</li><li>Pool</li></ul>
-                <h5 class="heading">DESCRIPTION</h5>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.Delentiti,illum totam magni voluptatibus libero delectus nesciunt
-                    hic vel! Aperian esse asperiores culpa,natus quam quis eum ex doloremque doloribus architecto!    
-                </p></div>
-            </main>
-            <footer class="footer">
-                <a id="contact" href="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\contact.html">Contact Us</a>
-                <p id="copyw">&copy; 2020 ROOM SEARCH PVT LTD</p>
-                <div id="social">
-                    <a href="https://facebook.com/" target="_blank"><img src="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\assests\images\facebook.png" height="20px" width="22px"></a>
-                    <a href="https://instagram.com/" target="_blank"><img src="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\assests\images\instagram.png" height="20px" width="22px"></a>
-                    <a href="https://twitter.com/" target="_blank"><img src="C:\Users\sejit\Downloads\Hotel_Booking_Website_Starter_Code\assests\images\twitter.png" height="20px" width="22px"></a>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/detail.css" />
+    <link rel="stylesheet" href="./styles/common.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <title>Detail</title>
+</head>
+
+<body>
+
+    <div>
+
+        <header class="header">
+            <a href="./index.html"><img id="logo_img" src="./assests/images/logo.png" alt="logo" /></a>
+            <button onclick="closeLoginModal()" id="login_btn" type="button" class="btn btn-light">login</button>
+        </header>
+
+        <main class="content">
+
+            <div class="main_des">
+
+                <div class="radison">
+                    <img id="radison_img"
+                        src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" />
                 </div>
-            </footer>
+
+                <form class="forms">
+                    <div class="form_ele">
+                        <label for="adult">Adults: </label>
+                        <input type="number" name="adult" value="1" min="1" step="1" class="form_input" required />
+                    </div>
+                    <div class="form_ele">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" class="form_input" required />
+                    </div>
+                    <div class="form_ele">
+                        <label for="fDate">From Date: </label>
+                        <input type="date" name="fDate" class="form_input" required />
+                    </div>
+                    <div class="form_ele">
+                        <label for="tDate">To Date: </label>
+                        <input type="date" name="tDate" class="form_input" required />
+                    </div>
+                    <div class="form_ele">
+                        <label for="total">Total</label>
+                        <input type="number" name="total" class="form_input" disabled />
+                    </div>
+                    <div id="submit">
+                        <button type="submit" formaction="./payment.html"
+                            class="btn btn-outline-success">Book Now</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="description">
+                <h2>Radison Blu Hotel</h2>
+                <h4 class="heading">RATING</h4>
+                <p>5 STAR</p>
+                <p class="heading">AMENITIES</p>
+                <ul>
+                    <li>Room service</li>
+                    <li>Restaurent</li>
+                    <li>Bussiness center</li>
+                    <li>Fitness center</li>
+                    <li>Pool</li>
+                </ul>
+
+                <h5 class="heading">DESCRIPTION</h5>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repudiandae totam sed ut sunt, rem,
+                    labore necessitatibus nobis consequatur fuga, explicabo blanditiis sapiente ex rerum enim quod neque
+                    laborum est error qui ipsam! Dolore, ducimus reprehenderit? Earum, optio amet modi doloribus dolore
+                    impedit quasi, repellendus ipsum repellat hic esse error?</P>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <button onclick="closeContactModal()" id="contact_btn" type="button" class="btn btn-info">Conatct
+                Us</button>
+
+            <p id="copywrite">&#169; 2020 ROOM SEARCH PVT.LTD.</p>
+
+            <div id="social">
+                <a href="https://www.facebook.com/"><img class="social_img" src="./assests/images/facebook.png" /></a>
+                <a href="https://www.instagram.com/"><img class="social_img" src="./assests/images/instagram.png" /></a>
+                <a href="https://twitter.com/"><img class="social_img" src="./assests/images/twitter.png" /></a>
+            </div>
+
+        </footer>
+
+
+        <!-- adding login modal -->
+
+        <div class="modals invisible" id="login_modal">
+
+            <div class="modal_head">
+                <h4 class="modal_head_item">Please Login</h4>
+                <button onclick="closeLoginModal()" class="modal_head_item" type="button" class="close"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <form class="form">
+                <div class="form_element">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" placeholder="Enter Username" required>
+                </div>
+                <div class="form_element">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" placeholder="Enter Password" required>
+                </div>
+                <div id="submit_btn" class="form_element">
+                    <button onsubmit="closeLoginModal()" type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+
         </div>
-    </body>
+
+
+        <!-- adding Contact Modal -->
+
+
+        <div class="modals invisible" id="contact_modal">
+
+            <div class="modal_head">
+                <h2 class="modal_head_item">Get in touch</h2>
+                <button onclick="closeContactModal()" class="modal_head_item" type="button" class="close"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="cnt_modal_ele">
+                <p style="margin: 0;">Thank you for reaching out!!!</p>
+                <p>Please enter your email and we will get back to you.</p>
+            </div>
+
+            <form class="form_contact">
+                <div class="form_cnt_ele">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Enter your email id" required /><br>
+                </div>
+                <div id="submit_btn_cnt">
+                    <button onsubmit="closeContactModal()" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+
+        </div>
+
+
+
+        <script>
+            const modal_login = document.getElementById('login_modal');
+            const modal_contact = document.getElementById('contact_modal');
+
+            const closeLoginModal = () => {
+                modal_login.classList.toggle('invisible');
+                modal_contact.classList.add('invisible')
+            }
+
+            const closeContactModal = () => {
+                modal_contact.classList.toggle('invisible');
+                modal_login.classList.add('invisible');
+            }
+        </script>
+
+    </div>
+
+</body>
+
 </html>

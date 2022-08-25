@@ -1,125 +1,93 @@
-body{
-    background-color: #e0e0e0;
-    margin: 0px;
-    width: 100%;
-    height: 100%;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-.header,.content,.footer{
-    width: 100%;
-    height: 100%;
-}
-.header{
-    background-color: rosybrown;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    height: fit-content;
-    top: 0;
-}
-#login{
-    padding: 1%;
-    padding-right: 2%;
-}
-.content{
+/* styling content */
+
+.content {
     margin-top: 60px;
     margin-bottom: 6%;
-}
-.bg{
-    background: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg) center/cover no-repeat border-box;
-    height: 380px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
-#search{
-    border: 1px solid transparent;
-    background-color: #f1f1f1;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 12px;
-    width: 350px;
-    outline: none;
-}
-.citycards{
-    margin: 0 15%;
+
+.image_container {
+    margin: 4% 15%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-.city_img{
-    width: 150px;
-    height: 150px;
-    border-radius: 25px;
-}
-.img_cont{
-    position: relative;
-    width: 150px;
-    height: 150px;
-    margin: 4% 0;
-    border-radius: 25px;
-    box-shadow: 10px 10px 10px grey;
 
+.img_cont {
+    position: relative;
+    margin: 4% 0;
+    width: 150px;
+    height: 150px;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 25%;
 }
-#delhi,#goa,#hyd,#kolk{
+
+.city_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+}
+
+
+
+#delhi_bd,
+#goa_bd,
+#hyd_bd,
+#kolk_bd {
     position: absolute;
     padding: 0;
     width: 150px;
     height: 150px;
-    border-radius: 25px;
-    background-color: rgba(0,0,0,0.5);
+    border-radius: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
-#delhi:hover{
+
+#delhi_bd:hover {
     opacity: 1;
 }
-#goa:hover{
+
+#goa_bd:hover {
     opacity: 1;
 }
-#hyd:hover{
+
+#hyd_bd:hover {
     opacity: 1;
 }
-#kolk:hover{
+
+#kolk_bd:hover {
     opacity: 1;
 }
-#view{
-    text-align: center;
-}
-.footer{
-    background-color: rosybrown;
+
+
+.search {
+    height: 380px;
+    background: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg) center/cover no-repeat border-box;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    height: fit-content;
-}
-#contact{
-    padding: 1%;
-    margin-left: 2%;
-}
-#social{
-    padding: 1%;
-    margin-right: 2%;
-}
-#copyw{
-    margin-bottom: 0;
-    font-size: 10px;
-}
-html{
-    font-family: 'Ubuntu', 'san-serif';
-}
-#img10{
-    margin-left: 1%;
 }
 
+#search_bar {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 350px;
+}
 
+#search_bar:focus {
+    border: none;
+}
 
+#view_more {
+    margin: auto;
+    width: max-content;
+}

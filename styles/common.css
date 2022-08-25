@@ -1,8 +1,142 @@
-.marg{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.list{
+.modals {
+    width: 40%;
+    position: fixed;
+    top: 4%;
+    left: 30%;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.invisible {
+    display: none;
+}
+
+.modal_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 1%;
+}
+
+.modal_head_item {
+    margin: 10px;
+    border: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_element {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+#submit_btn {
+    margin: 0;
+    padding: 15px 0;
+    margin-bottom: 0;
+    border-top: 1px solid black;
+}
+
+/* styling constct modal */
+
+.cnt_modal_ele {
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.form_contact {
+    position: relative;
+}
+
+.form_cnt_ele {
+    padding: 10px;
+    padding-top: 0;
+    border-bottom: 1px solid black;
+}
+
+#submit_btn_cnt {
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* styling header */
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header,
+.content,
+.footer {
+    width: 100%;
+    height: 100%;
+}
+
+
+.header {
+    background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: fit-content;
+}
+
+#login_btn {
+    margin-right: 2%;
+}
+
+#logo_img {
+    height: 60px;
+    width: 60px;
+    margin-left: 1%;
+}
+
+
+/* styling footer */
+
+.footer {
+    background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: max-content;
+}
+
+#contact_btn {
+    margin: 0.5%;
+}
+
+#social {
+    margin-right: 2%;
+}
+
+#copywrite {
+    margin-bottom: 0;
+}
+
+.social_img {
+    height: 20px;
+    width: 22px;
 }

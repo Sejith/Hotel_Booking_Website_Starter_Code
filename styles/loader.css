@@ -2,14 +2,32 @@
     margin-top: 0;
     margin-bottom: 0;
 }
-.in{
-    stroke: #444444;
-    fill: none;
-    stroke-width: 12px;
+.loader{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
 }
-.out{
-    stroke: #f3f3f3 ;
-    fill: none;
-    stroke-width: 12px;
-    stroke-dasharray: 120;
+@-webkit-keyframes spin{
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
 }
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+

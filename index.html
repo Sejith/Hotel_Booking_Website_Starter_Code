@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/common.css">
@@ -18,18 +15,48 @@
     <title>index</title>
 </head>
 
-<body>
-    <div>
+<body class style> 
+    <div class="main-container">
 
-        <header class="header">
-            <img id="logo_img" src="./assests/images/logo.png" alt="logo" />
-            <button onclick="closeLoginModal()" id="login_btn" type="button" class="btn btn-light">login</button>
+        <header class="header-footer">
+            <img src="./assests/images/logo.png" class="logo" id="logo-image" alt="logo" />
+            <button data-toggle="modal" data-backdrop="false" data-target="#login-modal" id="login" type="button" class="btn btn-light btn-sm">login</button>
+            <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal-label" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="login-modal-label">Please Login</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">x</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="login-form">
+                                <div class="login-field">
+                                    <label for="username">Username: </label>
+                                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                                </div>
+                                <div class="login-field">
+                                    <label for="password">Password: </label>
+                                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                                </div>
+                            </form>        
+                        </div>
+                        <div class="modal-footer">
+                            <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal">login</button>  
+                        </div>    
+                    </div>        
+                </div>
+            </div>
         </header>
 
-        <main class="content">
-
-            <div class="search">
-                <input id="search_bar" type="search" placeholder="City" />
+        <div id="index-container">
+            <div id="banner">
+                <div id="search-bar">
+                    <form autocomplete="off">
+                        <input id="search-input" type="text" placeholder="City" />
+                    </form>
+                </div>
             </div>
 
             <div class="image_container">
@@ -52,102 +79,48 @@
                         src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" />
                 </div>
             </div>
+            <a href="index.html" id="view-more"><button type="button"  class="btn btn-secondary">View More</button></a>
+        </div>
 
-            <a href="index.html" id="view_more"><button type="button"  class="btn btn-secondary">View More</button></a>
-        </main>
 
-
-        <footer class="footer">
-            <button onclick="closeContactModal()" id="contact_btn" type="button" class="btn btn-info">Conatct
-                Us</button>
-
-            <p id="copywrite">&#169; 2020 ROOM SEARCH PVT.LTD.</p>
-
-            <div id="social">
-                <a href="https://www.facebook.com/"><img class="social_img" src="./assests/images/facebook.png" /></a>
-                <a href="https://www.instagram.com/"><img class="social_img" src="./assests/images/instagram.png" /></a>
-                <a href="https://twitter.com/"><img class="social_img" src="./assests/images/twitter.png" /></a>
+        <footer class="header-footer">
+            <div id="contact">
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-backdrop="false" data-target="#contact-modal">Conatct Us</button>
+                <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="contact-modal-label">Get in touch</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">x</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <p>
+                                        "Thank you for reaching out!!! "
+                                        <br>
+                                        "Please enter your email and we will get back to you. "
+                                    </p>
+                                        <label for="email">Email: </label>
+                                        <input type="text" id="email" name="email" placeholder="Enter your email id" required>
+                                </form>        
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">login</button>  
+                            </div>    
+                        </div>        
+                    </div>
+                </div>
             </div>
+            <div id="copyright-text">&#169; 2020 ROOM SEARCH PVT.LTD.</div>
 
+            <div id="social-media-images">
+                <a href="https://www.facebook.com" target="_blank"><img class="social-media-image" src="./assests/images/facebook.png" /></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="social-media-image" src="./assests/images/instagram.png" /></a>
+                <a href="https://twitter.com" target="_blank"><img class="social-media-image" src="./assests/images/twitter.png" /></a>
+            </div>
         </footer>
-
     </div>
-
-    <!-- adding login modal -->
-
-    <div class="modals invisible" id="login_modal">
-
-        <div class="modal_head">
-            <h4 class="modal_head_item">Please Login</h4>
-            <button onclick="closeLoginModal()" class="modal_head_item" type="button" class="close" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-
-        <form class="form">
-            <div class="form_element">
-                <label for="username">Username:</label>
-                <input type="text" name="username" placeholder="Enter Username" required>
-            </div>
-            <div class="form_element">
-                <label for="password">Password:</label>
-                <input type="password" name="password" placeholder="Enter Password" required>
-            </div>
-            <div id="submit_btn" class="form_element">
-                <button onsubmit="closeLoginModal()" type="submit" class="btn btn-primary">Login</button>
-            </div>
-        </form>
-
-    </div>
-
-
-    <!-- adding Contact Modal -->
-
-
-    <div class="modals invisible" id="contact_modal">
-
-        <div class="modal_head">
-            <h2 class="modal_head_item">Get in touch</h2>
-            <button onclick="closeContactModal()" class="modal_head_item" type="button" class="close"
-                aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-
-        <div class="cnt_modal_ele">
-            <p style="margin: 0;">Thank you for reaching out!!!</p>
-            <p>Please enter your email and we will get back to you.</p>
-        </div>
-
-        <form class="form_contact">
-            <div class="form_cnt_ele">
-                <label for="email">Email:</label>
-                <input type="email" name="email" placeholder="Enter your email id" required /><br>
-            </div>
-            <div id="submit_btn_cnt">
-                <button onsubmit="closeContactModal()" type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </form>
-
-    </div>
-
-
-
-    <script>
-        const modal_login = document.getElementById('login_modal');
-        const modal_contact = document.getElementById('contact_modal');
-
-        const closeLoginModal = () => {
-            modal_login.classList.toggle('invisible');
-            modal_contact.classList.add('invisible')
-        }
-
-        const closeContactModal = () => {
-            modal_contact.classList.toggle('invisible');
-            modal_login.classList.add('invisible');
-        }
-    </script>
-    
 </body>
-
 </html>

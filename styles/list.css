@@ -1,86 +1,40 @@
-/* styling content */
-
-.content {
-    margin: 60px 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0;
-}
-
-.link_design {
-    text-decoration: none;
-    color: black;
-}
-
-.link_design:hover {
-    text-decoration: none;
-    color: black;
-}
-
-.hotel_desp {
-    padding: 20px 0;
-}
-
-.list_item {
-    font-weight: bold;
-    padding: 0.5%;
-    margin: 1%;
-    border-radius: 8px;
-}
-
-.List_item_selected {
-    background-color: #007bff;
-}
-
-
-.content {
-    margin: 60px 0;
-}
-
-.hotel_img {
+/* Added CSS for hotel image on hotel list page*/
+.hotel-image-small {
+    height: 200px;
     width: 250px;
-    height: 250px;
-    margin-right: 4%;
 }
-
-.image_cards {
-    display: flex;
-    flex-wrap: wrap;
-    text-decoration: none;
-}
-
-.image_card {
+.hotel{
+    margin: 4% 5% 0% 5%; 
+    background-color: lightgrey;
     width: 40%;
-    margin: 2%;
-    background-color: lightgray;
+    float: left;
     display: flex;
+    justify-content: start;
+    align-content: center;
 }
-
-.link {
-    width: 40%;
-    margin: 2%;
-    background-color: lightgray;
-    text-decoration: none;
-    color: black;
-}
-
-.link:hover {
-    text-decoration: none;
-    color: black;
-}
-
-.link section {
-    width: 100%;
-    margin: 0;
-}
-
-.image_card:hover {
+.hotel:hover {
     background-color: rosybrown;
+}
+#list-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 6%;
+}
+#list-map {
+    position: relative;
+    top: 0%;
+}
+#select-list {
+    position: absolute;
+    left: 42%;
+    font-weight: bold;
+}
+#select-map {
+    position: absolute;
+    left: 50%;
+    font-weight: bold;
+}
+#pills-tab {
+    justify-content: center;
 }

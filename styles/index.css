@@ -71,11 +71,26 @@
     justify-content: center;
 }
 .image_container {
-    margin: 4% 15%;
+    margin: 2% 15%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+.image_container2 {
+    margin: 2% 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.img_cont2 {
+    position: relative;
+    margin: 4% 0;
+    width: 150px;
+    height: 150px;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 25%;
 }
 
 .img_cont {
@@ -98,7 +113,12 @@
 #delhi_bd,
 #goa_bd,
 #hyd_bd,
-#kolk_bd {
+#kolk_bd, 
+#che_bd,
+#jai_bd,
+#agra_bd,
+#bln_bd
+{
     position: absolute;
     padding: 0;
     width: 150px;
@@ -125,5 +145,17 @@
 }
 
 #kolk_bd:hover {
+    opacity: 1;
+}
+#che_bd:hover {
+    opacity: 1;
+}
+#agra_bd:hover {
+    opacity: 1;
+}
+#jai_bd:hover {
+    opacity: 1;
+}
+#bln_bd:hover {
     opacity: 1;
 }

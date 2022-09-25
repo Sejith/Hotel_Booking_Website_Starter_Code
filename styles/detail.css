@@ -24,20 +24,15 @@
     align-items: center;
 }
 .w-100{
-    height: 400px;
+    height: 350px;
+    width: 350px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
 }
 .carousel-control-prev,.carousel-control-next{
     color: rosybrown;
 }
-#radison_img {
-    width: 350px;
-    height: 350px;
-    margin: auto;
-}
+
 
 .forms {
     padding: 15px;
